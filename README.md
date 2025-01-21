@@ -44,23 +44,19 @@ https://github.com/davide-peterlini/PanKey.git
    ```
 2. Start the app:
    ```bash
-   npm run start
+   npm run ionic:build && npx cap copy android && npx cap run android --target={DEVICE_NAME} --no-build
    ```
 3. Follow platform-specific instructions for iOS or Android emulators.
 
 #### For Web (Ionic Framework):
 
-1. Navigate to the web directory:
-   ```bash
-   cd pankey/web
-   ```
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the web app:
+2. Start the web app:
    ```bash
-   npm run serve
+   npm run ionic:serve
    ```
 
 ---
